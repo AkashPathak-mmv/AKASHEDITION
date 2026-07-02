@@ -1,0 +1,2521 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)https://ais-dev-n6ynywkrc7skcur3ohq3cx-529322522046.asia-east1.run.app/#three-d-workspace -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module" src="./client"></script>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Google AI Studio App</title>
+  <script src="./_aistudio-iframe.js.download"></script><script src="./html2canvas-pro@2.0.4"></script><style>.aistudio-hover-highlight { box-shadow: inset 0 0 0 0.5px white, inset 0 0 0 1.5px rgba(128,128,128,0.6) !important; }.aistudio-active-highlight { outline: 2px solid #87a9ff !important; outline-offset: -2px !important; box-shadow: 0 0 0 0.5px rgba(0,0,0,0.3), inset 0 0 0 0.5px rgba(0,0,0,0.3) !important; }.aistudio-generating-blur { filter: blur(5px) grayscale(100%) brightness(28%) !important; transition: filter 0.3s ease; }#aistudio-focus-mode-tag { position: absolute; display: none; align-items: center; gap: 4px; background: #87a9ff; border-radius: 12px; z-index: 10000; padding: 8px; color: #32302c; font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-weight: 500; line-height: 21px; pointer-events: none; }#aistudio-hover-mode-tag { position: absolute; display: none; align-items: center; gap: 4px; background: rgba(128,128,128,0.6); border-radius: 12px; z-index: 10000; padding: 8px; color: white; font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-weight: 500; line-height: 21px; pointer-events: none; }.aistudio-img-icon { display: none; vertical-align: middle; pointer-events: auto; cursor: pointer; }.aistudio-img-icon.visible { display: inline-flex; }#aistudio-focus-mode-tag .aistudio-img-icon { position: relative; width: 26px; height: 26px; background: #32302c; border-radius: 6px; margin: -4px -4px -4px 0; }#aistudio-focus-mode-tag .aistudio-img-icon::before { content: ""; position: absolute; top: 4px; left: 4px; width: 18px; height: 18px; background-color: white; -webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/edit_fix_auto/default/24px.svg"); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/edit_fix_auto/default/24px.svg"); mask-size: contain; mask-repeat: no-repeat; }#aistudio-hover-mode-tag .aistudio-img-icon { position: relative; width: 18px; height: 18px; margin-left: 4px; }#aistudio-hover-mode-tag .aistudio-img-icon::before { content: ""; position: absolute; top: 0; left: 0; width: 18px; height: 18px; background-color: white; -webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/edit_fix_auto/default/24px.svg"); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/edit_fix_auto/default/24px.svg"); mask-size: contain; mask-repeat: no-repeat; }#aistudio-focus-mode-tag .aistudio-img-icon:hover, #aistudio-hover-mode-tag .aistudio-img-icon:hover { background: #424242 !important; }#aistudio-focus-mode-tag .aistudio-img-icon:active, #aistudio-hover-mode-tag .aistudio-img-icon:active { background: #393f51 !important; }</style><style type="text/css" data-vite-dev-id="/app/applet/src/index.css">
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+/*! tailwindcss v4.3.2 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+    --color-amber-500: oklch(76.9% 0.188 70.08);
+    --color-emerald-400: oklch(76.5% 0.177 163.223);
+    --color-emerald-500: oklch(69.6% 0.17 162.48);
+    --color-slate-950: oklch(12.9% 0.042 264.695);
+    --color-neutral-200: oklch(92.2% 0 0);
+    --color-black: #000;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-xl: 36rem;
+    --container-2xl: 42rem;
+    --container-5xl: 64rem;
+    --container-7xl: 80rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black: 900;
+    --tracking-tighter: -0.05em;
+    --tracking-tight: -0.025em;
+    --tracking-wide: 0.025em;
+    --tracking-wider: 0.05em;
+    --tracking-widest: 0.1em;
+    --leading-tight: 1.25;
+    --leading-relaxed: 1.625;
+    --radius-sm: 0.25rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --animate-spin: spin 1s linear infinite;
+    --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    --blur-sm: 8px;
+    --blur-md: 12px;
+    --blur-lg: 16px;
+    --blur-2xl: 40px;
+    --blur-3xl: 64px;
+    --aspect-video: 16 / 9;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+    --color-brand-red: #ff3366;
+    --color-brand-cyan: #06b6d4;
+    --color-brand-purple: #8a2be2;
+    --color-editor-bg: #050505;
+    --color-editor-card: #121214;
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .inset-0 {
+    inset: 0;
+  }
+  .inset-4 {
+    inset: calc(var(--spacing) * 4);
+  }
+  .inset-6 {
+    inset: calc(var(--spacing) * 6);
+  }
+  .top-0 {
+    top: 0;
+  }
+  .top-1\/2 {
+    top: calc(1 / 2 * 100%);
+  }
+  .top-1\/4 {
+    top: calc(1 / 4 * 100%);
+  }
+  .top-2 {
+    top: calc(var(--spacing) * 2);
+  }
+  .top-3 {
+    top: calc(var(--spacing) * 3);
+  }
+  .top-4 {
+    top: calc(var(--spacing) * 4);
+  }
+  .top-6 {
+    top: calc(var(--spacing) * 6);
+  }
+  .top-14 {
+    top: calc(var(--spacing) * 14);
+  }
+  .top-20 {
+    top: calc(var(--spacing) * 20);
+  }
+  .top-\[-3px\] {
+    top: -3px;
+  }
+  .top-\[-4px\] {
+    top: -4px;
+  }
+  .right-0 {
+    right: 0;
+  }
+  .right-1\/4 {
+    right: calc(1 / 4 * 100%);
+  }
+  .right-3 {
+    right: calc(var(--spacing) * 3);
+  }
+  .right-4 {
+    right: calc(var(--spacing) * 4);
+  }
+  .right-6 {
+    right: calc(var(--spacing) * 6);
+  }
+  .right-10 {
+    right: calc(var(--spacing) * 10);
+  }
+  .right-20 {
+    right: calc(var(--spacing) * 20);
+  }
+  .bottom-0 {
+    bottom: 0;
+  }
+  .bottom-1\/4 {
+    bottom: calc(1 / 4 * 100%);
+  }
+  .bottom-2 {
+    bottom: calc(var(--spacing) * 2);
+  }
+  .bottom-3 {
+    bottom: calc(var(--spacing) * 3);
+  }
+  .bottom-4 {
+    bottom: calc(var(--spacing) * 4);
+  }
+  .bottom-20 {
+    bottom: calc(var(--spacing) * 20);
+  }
+  .bottom-24 {
+    bottom: calc(var(--spacing) * 24);
+  }
+  .bottom-\[-2px\] {
+    bottom: -2px;
+  }
+  .left-0 {
+    left: 0;
+  }
+  .left-1\/2 {
+    left: calc(1 / 2 * 100%);
+  }
+  .left-1\/4 {
+    left: calc(1 / 4 * 100%);
+  }
+  .left-2 {
+    left: calc(var(--spacing) * 2);
+  }
+  .left-3 {
+    left: calc(var(--spacing) * 3);
+  }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
+  }
+  .left-6 {
+    left: calc(var(--spacing) * 6);
+  }
+  .left-10 {
+    left: calc(var(--spacing) * 10);
+  }
+  .left-\[-2px\] {
+    left: -2px;
+  }
+  .z-0 {
+    z-index: 0;
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .z-20 {
+    z-index: 20;
+  }
+  .z-30 {
+    z-index: 30;
+  }
+  .z-40 {
+    z-index: 40;
+  }
+  .z-50 {
+    z-index: 50;
+  }
+  .col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-1 {
+    margin-top: var(--spacing);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mr-1 {
+    margin-right: var(--spacing);
+  }
+  .mb-1 {
+    margin-bottom: var(--spacing);
+  }
+  .ml-0\.5 {
+    margin-left: calc(var(--spacing) * 0.5);
+  }
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .block {
+    display: block;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .hidden {
+    display: none;
+  }
+  .inline-flex {
+    display: inline-flex;
+  }
+  .aspect-\[4\/5\] {
+    aspect-ratio: 4/5;
+  }
+  .aspect-\[16\/11\] {
+    aspect-ratio: 16/11;
+  }
+  .aspect-video {
+    aspect-ratio: var(--aspect-video);
+  }
+  .h-1 {
+    height: var(--spacing);
+  }
+  .h-1\.5 {
+    height: calc(var(--spacing) * 1.5);
+  }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
+  .h-2\.5 {
+    height: calc(var(--spacing) * 2.5);
+  }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
+  .h-3\.5 {
+    height: calc(var(--spacing) * 3.5);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-4\.5 {
+    height: calc(var(--spacing) * 4.5);
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
+  }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
+  }
+  .h-32 {
+    height: calc(var(--spacing) * 32);
+  }
+  .h-\[1px\] {
+    height: 1px;
+  }
+  .h-\[40vw\] {
+    height: 40vw;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .min-h-\[380px\] {
+    min-height: 380px;
+  }
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  .w-1 {
+    width: var(--spacing);
+  }
+  .w-1\.5 {
+    width: calc(var(--spacing) * 1.5);
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-2\.5 {
+    width: calc(var(--spacing) * 2.5);
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-3\.5 {
+    width: calc(var(--spacing) * 3.5);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-4\.5 {
+    width: calc(var(--spacing) * 4.5);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+  .w-12 {
+    width: calc(var(--spacing) * 12);
+  }
+  .w-16 {
+    width: calc(var(--spacing) * 16);
+  }
+  .w-24 {
+    width: calc(var(--spacing) * 24);
+  }
+  .w-32 {
+    width: calc(var(--spacing) * 32);
+  }
+  .w-\[1px\] {
+    width: 1px;
+  }
+  .w-\[10\%\] {
+    width: 10%;
+  }
+  .w-\[15\%\] {
+    width: 15%;
+  }
+  .w-\[20\%\] {
+    width: 20%;
+  }
+  .w-\[25\%\] {
+    width: 25%;
+  }
+  .w-\[30\%\] {
+    width: 30%;
+  }
+  .w-\[35\%\] {
+    width: 35%;
+  }
+  .w-\[40vw\] {
+    width: 40vw;
+  }
+  .w-\[45\%\] {
+    width: 45%;
+  }
+  .w-\[60\%\] {
+    width: 60%;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-2xl {
+    max-width: var(--container-2xl);
+  }
+  .max-w-5xl {
+    max-width: var(--container-5xl);
+  }
+  .max-w-7xl {
+    max-width: var(--container-7xl);
+  }
+  .max-w-\[340px\] {
+    max-width: 340px;
+  }
+  .max-w-\[480px\] {
+    max-width: 480px;
+  }
+  .max-w-xl {
+    max-width: var(--container-xl);
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .shrink-0 {
+    flex-shrink: 0;
+  }
+  .-translate-x-1\/2 {
+    --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-x-full {
+    --tw-translate-x: -100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-x-1\/2 {
+    --tw-translate-x: calc(1 / 2 * 100%);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-y-1\/2 {
+    --tw-translate-y: calc(1 / 2 * 100%);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .scale-75 {
+    --tw-scale-x: 75%;
+    --tw-scale-y: 75%;
+    --tw-scale-z: 75%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .scale-90 {
+    --tw-scale-x: 90%;
+    --tw-scale-y: 90%;
+    --tw-scale-z: 90%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .-rotate-45 {
+    rotate: calc(45deg * -1);
+  }
+  .rotate-45 {
+    rotate: 45deg;
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .animate-ping {
+    animation: var(--animate-ping);
+  }
+  .animate-pulse {
+    animation: var(--animate-pulse);
+  }
+  .animate-spin {
+    animation: var(--animate-spin);
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-0\.5 {
+    gap: calc(var(--spacing) * 0.5);
+  }
+  .gap-1 {
+    gap: var(--spacing);
+  }
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+  .space-y-0\.5 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 0.5) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 0.5) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-1 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(var(--spacing) * var(--tw-space-y-reverse));
+      margin-block-end: calc(var(--spacing) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-2 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-3 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-5 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 5) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-6 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-8 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 8) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-10 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 10) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 10) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-16 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 16) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 16) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-24 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 24) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 24) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-sm {
+    border-radius: var(--radius-sm);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-y {
+    border-block-style: var(--tw-border-style);
+    border-block-width: 1px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-t-2 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 2px;
+  }
+  .border-r {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 1px;
+  }
+  .border-r-2 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 2px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+  }
+  .border-l {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 1px;
+  }
+  .border-l-2 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 2px;
+  }
+  .border-dashed {
+    --tw-border-style: dashed;
+    border-style: dashed;
+  }
+  .border-brand-cyan {
+    border-color: var(--color-brand-cyan);
+  }
+  .border-brand-cyan\/20 {
+    border-color: color-mix(in srgb, #06b6d4 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-brand-cyan) 20%, transparent);
+    }
+  }
+  .border-brand-cyan\/30 {
+    border-color: color-mix(in srgb, #06b6d4 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-brand-cyan) 30%, transparent);
+    }
+  }
+  .border-brand-cyan\/40 {
+    border-color: color-mix(in srgb, #06b6d4 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-brand-cyan) 40%, transparent);
+    }
+  }
+  .border-brand-purple\/40 {
+    border-color: color-mix(in srgb, #8a2be2 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-brand-purple) 40%, transparent);
+    }
+  }
+  .border-brand-purple\/50 {
+    border-color: color-mix(in srgb, #8a2be2 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-brand-purple) 50%, transparent);
+    }
+  }
+  .border-brand-red\/30 {
+    border-color: color-mix(in srgb, #ff3366 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-brand-red) 30%, transparent);
+    }
+  }
+  .border-brand-red\/40 {
+    border-color: color-mix(in srgb, #ff3366 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-brand-red) 40%, transparent);
+    }
+  }
+  .border-emerald-500\/30 {
+    border-color: color-mix(in srgb, oklch(69.6% 0.17 162.48) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-emerald-500) 30%, transparent);
+    }
+  }
+  .border-emerald-500\/40 {
+    border-color: color-mix(in srgb, oklch(69.6% 0.17 162.48) 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-emerald-500) 40%, transparent);
+    }
+  }
+  .border-transparent {
+    border-color: transparent;
+  }
+  .border-white\/5 {
+    border-color: color-mix(in srgb, #fff 5%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+    }
+  }
+  .border-white\/10 {
+    border-color: color-mix(in srgb, #fff 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+  .border-white\/15 {
+    border-color: color-mix(in srgb, #fff 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 15%, transparent);
+    }
+  }
+  .border-white\/20 {
+    border-color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+  .bg-\[\#050505\]\/40 {
+    background-color: color-mix(in oklab, #050505 40%, transparent);
+  }
+  .bg-\[\#121214\]\/80 {
+    background-color: color-mix(in oklab, #121214 80%, transparent);
+  }
+  .bg-amber-500 {
+    background-color: var(--color-amber-500);
+  }
+  .bg-black {
+    background-color: var(--color-black);
+  }
+  .bg-black\/30 {
+    background-color: color-mix(in srgb, #000 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 30%, transparent);
+    }
+  }
+  .bg-black\/40 {
+    background-color: color-mix(in srgb, #000 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 40%, transparent);
+    }
+  }
+  .bg-black\/50 {
+    background-color: color-mix(in srgb, #000 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
+    }
+  }
+  .bg-black\/60 {
+    background-color: color-mix(in srgb, #000 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
+    }
+  }
+  .bg-black\/70 {
+    background-color: color-mix(in srgb, #000 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 70%, transparent);
+    }
+  }
+  .bg-black\/80 {
+    background-color: color-mix(in srgb, #000 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 80%, transparent);
+    }
+  }
+  .bg-black\/95 {
+    background-color: color-mix(in srgb, #000 95%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 95%, transparent);
+    }
+  }
+  .bg-brand-cyan {
+    background-color: var(--color-brand-cyan);
+  }
+  .bg-brand-cyan\/5 {
+    background-color: color-mix(in srgb, #06b6d4 5%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-brand-cyan) 5%, transparent);
+    }
+  }
+  .bg-brand-cyan\/10 {
+    background-color: color-mix(in srgb, #06b6d4 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-brand-cyan) 10%, transparent);
+    }
+  }
+  .bg-brand-cyan\/15 {
+    background-color: color-mix(in srgb, #06b6d4 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-brand-cyan) 15%, transparent);
+    }
+  }
+  .bg-brand-cyan\/20 {
+    background-color: color-mix(in srgb, #06b6d4 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-brand-cyan) 20%, transparent);
+    }
+  }
+  .bg-brand-purple\/20 {
+    background-color: color-mix(in srgb, #8a2be2 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-brand-purple) 20%, transparent);
+    }
+  }
+  .bg-brand-red {
+    background-color: var(--color-brand-red);
+  }
+  .bg-brand-red\/10 {
+    background-color: color-mix(in srgb, #ff3366 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-brand-red) 10%, transparent);
+    }
+  }
+  .bg-brand-red\/15 {
+    background-color: color-mix(in srgb, #ff3366 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-brand-red) 15%, transparent);
+    }
+  }
+  .bg-brand-red\/20 {
+    background-color: color-mix(in srgb, #ff3366 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-brand-red) 20%, transparent);
+    }
+  }
+  .bg-brand-red\/90 {
+    background-color: color-mix(in srgb, #ff3366 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-brand-red) 90%, transparent);
+    }
+  }
+  .bg-editor-bg {
+    background-color: var(--color-editor-bg);
+  }
+  .bg-editor-bg\/80 {
+    background-color: color-mix(in srgb, #050505 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-editor-bg) 80%, transparent);
+    }
+  }
+  .bg-editor-bg\/85 {
+    background-color: color-mix(in srgb, #050505 85%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-editor-bg) 85%, transparent);
+    }
+  }
+  .bg-editor-card {
+    background-color: var(--color-editor-card);
+  }
+  .bg-editor-card\/20 {
+    background-color: color-mix(in srgb, #121214 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-editor-card) 20%, transparent);
+    }
+  }
+  .bg-editor-card\/25 {
+    background-color: color-mix(in srgb, #121214 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-editor-card) 25%, transparent);
+    }
+  }
+  .bg-editor-card\/30 {
+    background-color: color-mix(in srgb, #121214 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-editor-card) 30%, transparent);
+    }
+  }
+  .bg-editor-card\/40 {
+    background-color: color-mix(in srgb, #121214 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-editor-card) 40%, transparent);
+    }
+  }
+  .bg-editor-card\/60 {
+    background-color: color-mix(in srgb, #121214 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-editor-card) 60%, transparent);
+    }
+  }
+  .bg-editor-card\/95 {
+    background-color: color-mix(in srgb, #121214 95%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-editor-card) 95%, transparent);
+    }
+  }
+  .bg-emerald-500\/15 {
+    background-color: color-mix(in srgb, oklch(69.6% 0.17 162.48) 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-emerald-500) 15%, transparent);
+    }
+  }
+  .bg-emerald-500\/20 {
+    background-color: color-mix(in srgb, oklch(69.6% 0.17 162.48) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-emerald-500) 20%, transparent);
+    }
+  }
+  .bg-slate-950 {
+    background-color: var(--color-slate-950);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .bg-white\/5 {
+    background-color: color-mix(in srgb, #fff 5%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+    }
+  }
+  .bg-white\/10 {
+    background-color: color-mix(in srgb, #fff 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+  .bg-white\/20 {
+    background-color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+  .bg-gradient-to-r {
+    --tw-gradient-position: to right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-gradient-to-t {
+    --tw-gradient-position: to top in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-\[linear-gradient\(rgba\(18\,16\,16\,0\)_50\%\,rgba\(0\,0\,0\,0\.25\)_50\%\)\] {
+    background-image: linear-gradient(rgba(18,16,16,0) 50%,rgba(0,0,0,0.25) 50%);
+  }
+  .bg-\[linear-gradient\(to_right\,\#808080_1px\,transparent_1px\)\,linear-gradient\(to_bottom\,\#808080_1px\,transparent_1px\)\] {
+    background-image: linear-gradient(to right,#808080 1px,transparent 1px),linear-gradient(to bottom,#808080 1px,transparent 1px);
+  }
+  .from-brand-cyan {
+    --tw-gradient-from: var(--color-brand-cyan);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-brand-red\/20 {
+    --tw-gradient-from: color-mix(in srgb, #ff3366 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-from: color-mix(in oklab, var(--color-brand-red) 20%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-editor-bg {
+    --tw-gradient-from: var(--color-editor-bg);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-transparent {
+    --tw-gradient-from: transparent;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .via-black\/20 {
+    --tw-gradient-via: color-mix(in srgb, #000 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-via: color-mix(in oklab, var(--color-black) 20%, transparent);
+    }
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .via-brand-cyan\/20 {
+    --tw-gradient-via: color-mix(in srgb, #06b6d4 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-via: color-mix(in oklab, var(--color-brand-cyan) 20%, transparent);
+    }
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .via-brand-purple {
+    --tw-gradient-via: var(--color-brand-purple);
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .via-transparent {
+    --tw-gradient-via: transparent;
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .to-brand-purple {
+    --tw-gradient-to: var(--color-brand-purple);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-brand-red {
+    --tw-gradient-to: var(--color-brand-red);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-transparent {
+    --tw-gradient-to: transparent;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .bg-\[length\:100\%_4px\] {
+    background-size: 100% 4px;
+  }
+  .bg-\[size\:40px_40px\] {
+    background-size: 40px 40px;
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-clip-text {
+    background-clip: text;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .fill-brand-red {
+    fill: var(--color-brand-red);
+  }
+  .fill-white {
+    fill: var(--color-white);
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .p-0\.5 {
+    padding: calc(var(--spacing) * 0.5);
+  }
+  .p-1 {
+    padding: var(--spacing);
+  }
+  .p-1\.5 {
+    padding: calc(var(--spacing) * 1.5);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .px-0\.5 {
+    padding-inline: calc(var(--spacing) * 0.5);
+  }
+  .px-1 {
+    padding-inline: var(--spacing);
+  }
+  .px-1\.5 {
+    padding-inline: calc(var(--spacing) * 1.5);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-2\.5 {
+    padding-inline: calc(var(--spacing) * 2.5);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .py-0\.5 {
+    padding-block: calc(var(--spacing) * 0.5);
+  }
+  .py-1 {
+    padding-block: var(--spacing);
+  }
+  .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-3\.5 {
+    padding-block: calc(var(--spacing) * 3.5);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
+  }
+  .pt-1 {
+    padding-top: var(--spacing);
+  }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+  .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
+  }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
+  .pt-8 {
+    padding-top: calc(var(--spacing) * 8);
+  }
+  .pt-32 {
+    padding-top: calc(var(--spacing) * 32);
+  }
+  .pb-1 {
+    padding-bottom: var(--spacing);
+  }
+  .pb-3 {
+    padding-bottom: calc(var(--spacing) * 3);
+  }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
+  }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
+  }
+  .pl-4 {
+    padding-left: calc(var(--spacing) * 4);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .text-\[5px\] {
+    font-size: 5px;
+  }
+  .text-\[6px\] {
+    font-size: 6px;
+  }
+  .text-\[7px\] {
+    font-size: 7px;
+  }
+  .text-\[8px\] {
+    font-size: 8px;
+  }
+  .text-\[9px\] {
+    font-size: 9px;
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[11px\] {
+    font-size: 11px;
+  }
+  .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
+  }
+  .leading-relaxed {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+  }
+  .leading-tight {
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .tracking-\[0\.2em\] {
+    --tw-tracking: 0.2em;
+    letter-spacing: 0.2em;
+  }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+  .tracking-tighter {
+    --tw-tracking: var(--tracking-tighter);
+    letter-spacing: var(--tracking-tighter);
+  }
+  .tracking-wide {
+    --tw-tracking: var(--tracking-wide);
+    letter-spacing: var(--tracking-wide);
+  }
+  .tracking-wider {
+    --tw-tracking: var(--tracking-wider);
+    letter-spacing: var(--tracking-wider);
+  }
+  .tracking-widest {
+    --tw-tracking: var(--tracking-widest);
+    letter-spacing: var(--tracking-widest);
+  }
+  .text-black {
+    color: var(--color-black);
+  }
+  .text-brand-cyan {
+    color: var(--color-brand-cyan);
+  }
+  .text-brand-cyan\/40 {
+    color: color-mix(in srgb, #06b6d4 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-brand-cyan) 40%, transparent);
+    }
+  }
+  .text-brand-cyan\/80 {
+    color: color-mix(in srgb, #06b6d4 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-brand-cyan) 80%, transparent);
+    }
+  }
+  .text-brand-purple {
+    color: var(--color-brand-purple);
+  }
+  .text-brand-red {
+    color: var(--color-brand-red);
+  }
+  .text-emerald-400 {
+    color: var(--color-emerald-400);
+  }
+  .text-transparent {
+    color: transparent;
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .text-white\/20 {
+    color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+  .text-white\/30 {
+    color: color-mix(in srgb, #fff 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 30%, transparent);
+    }
+  }
+  .text-white\/40 {
+    color: color-mix(in srgb, #fff 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 40%, transparent);
+    }
+  }
+  .text-white\/50 {
+    color: color-mix(in srgb, #fff 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 50%, transparent);
+    }
+  }
+  .text-white\/55 {
+    color: color-mix(in srgb, #fff 55%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 55%, transparent);
+    }
+  }
+  .text-white\/60 {
+    color: color-mix(in srgb, #fff 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 60%, transparent);
+    }
+  }
+  .text-white\/70 {
+    color: color-mix(in srgb, #fff 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 70%, transparent);
+    }
+  }
+  .text-white\/80 {
+    color: color-mix(in srgb, #fff 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 80%, transparent);
+    }
+  }
+  .text-white\/90 {
+    color: color-mix(in srgb, #fff 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 90%, transparent);
+    }
+  }
+  .capitalize {
+    text-transform: capitalize;
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .opacity-0 {
+    opacity: 0%;
+  }
+  .opacity-40 {
+    opacity: 40%;
+  }
+  .opacity-60 {
+    opacity: 60%;
+  }
+  .opacity-75 {
+    opacity: 75%;
+  }
+  .opacity-80 {
+    opacity: 80%;
+  }
+  .opacity-\[0\.03\] {
+    opacity: 0.03;
+  }
+  .mix-blend-screen {
+    mix-blend-mode: screen;
+  }
+  .shadow-2xl {
+    --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_0_8px_\#00f0ff\] {
+    --tw-shadow: 0 0 8px var(--tw-shadow-color, #00f0ff);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_0_8px_\#ff3366\] {
+    --tw-shadow: 0 0 8px var(--tw-shadow-color, #ff3366);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_0_15px_rgba\(6\,182\,212\,0\.4\)\] {
+    --tw-shadow: 0 0 15px var(--tw-shadow-color, rgba(6,182,212,0.4));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_0_15px_rgba\(255\,51\,102\,0\.3\)\] {
+    --tw-shadow: 0 0 15px var(--tw-shadow-color, rgba(255,51,102,0.3));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_0_20px_\#ff3366\] {
+    --tw-shadow: 0 0 20px var(--tw-shadow-color, #ff3366);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_0_20px_rgba\(255\,51\,102\,0\.3\)\] {
+    --tw-shadow: 0 0 20px var(--tw-shadow-color, rgba(255,51,102,0.3));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_4px_12px_rgba\(0\,0\,0\,0\.5\)\] {
+    --tw-shadow: 0 4px 12px var(--tw-shadow-color, rgba(0,0,0,0.5));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-lg {
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-xl {
+    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .blur-2xl {
+    --tw-blur: blur(var(--blur-2xl));
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .blur-3xl {
+    --tw-blur: blur(var(--blur-3xl));
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .blur-\[120px\] {
+    --tw-blur: blur(120px);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .brightness-90 {
+    --tw-brightness: brightness(90%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .grayscale {
+    --tw-grayscale: grayscale(100%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .backdrop-blur-lg {
+    --tw-backdrop-blur: blur(var(--blur-lg));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-blur-md {
+    --tw-backdrop-blur: blur(var(--blur-md));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-blur-sm {
+    --tw-backdrop-blur: blur(var(--blur-sm));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-opacity {
+    transition-property: opacity;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-transform {
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-75 {
+    --tw-duration: 75ms;
+    transition-duration: 75ms;
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .duration-500 {
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
+  }
+  .duration-700 {
+    --tw-duration: 700ms;
+    transition-duration: 700ms;
+  }
+  .duration-1000 {
+    --tw-duration: 1000ms;
+    transition-duration: 1000ms;
+  }
+  .ease-out {
+    --tw-ease: var(--ease-out);
+    transition-timing-function: var(--ease-out);
+  }
+  .select-none {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .group-hover\:scale-100 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 100%;
+        --tw-scale-y: 100%;
+        --tw-scale-z: 100%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .group-hover\:scale-105 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-scale-x: 105%;
+        --tw-scale-y: 105%;
+        --tw-scale-z: 105%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .group-hover\:bg-brand-cyan\/10 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #06b6d4 10%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-brand-cyan) 10%, transparent);
+        }
+      }
+    }
+  }
+  .group-hover\:text-brand-cyan {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--color-brand-cyan);
+      }
+    }
+  }
+  .group-hover\:text-brand-red {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--color-brand-red);
+      }
+    }
+  }
+  .group-hover\:opacity-25 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        opacity: 25%;
+      }
+    }
+  }
+  .group-hover\:opacity-60 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        opacity: 60%;
+      }
+    }
+  }
+  .group-hover\:opacity-100 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        opacity: 100%;
+      }
+    }
+  }
+  .group-hover\:brightness-110 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-brightness: brightness(110%);
+        filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+      }
+    }
+  }
+  .group-hover\:grayscale-0 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-grayscale: grayscale(0%);
+        filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+      }
+    }
+  }
+  .selection\:bg-brand-red {
+    & *::selection {
+      background-color: var(--color-brand-red);
+    }
+    &::selection {
+      background-color: var(--color-brand-red);
+    }
+  }
+  .selection\:text-white {
+    & *::selection {
+      color: var(--color-white);
+    }
+    &::selection {
+      color: var(--color-white);
+    }
+  }
+  .hover\:scale-110 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 110%;
+        --tw-scale-y: 110%;
+        --tw-scale-z: 110%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:border-brand-cyan {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-brand-cyan);
+      }
+    }
+  }
+  .hover\:border-brand-red {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-brand-red);
+      }
+    }
+  }
+  .hover\:border-white\/10 {
+    &:hover {
+      @media (hover: hover) {
+        border-color: color-mix(in srgb, #fff 10%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+        }
+      }
+    }
+  }
+  .hover\:bg-brand-red\/90 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #ff3366 90%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-brand-red) 90%, transparent);
+        }
+      }
+    }
+  }
+  .hover\:bg-editor-card\/30 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #121214 30%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-editor-card) 30%, transparent);
+        }
+      }
+    }
+  }
+  .hover\:bg-neutral-200 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-neutral-200);
+      }
+    }
+  }
+  .hover\:bg-white {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:bg-white\/5 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #fff 5%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+        }
+      }
+    }
+  }
+  .hover\:bg-white\/10 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #fff 10%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+        }
+      }
+    }
+  }
+  .hover\:bg-white\/15 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #fff 15%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-white) 15%, transparent);
+        }
+      }
+    }
+  }
+  .hover\:text-black {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-black);
+      }
+    }
+  }
+  .hover\:text-brand-cyan {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-brand-cyan);
+      }
+    }
+  }
+  .hover\:text-brand-red {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-brand-red);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
+  .hover\:shadow-brand-red\/40 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow-color: color-mix(in srgb, #ff3366 40%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-brand-red) 40%, transparent) var(--tw-shadow-alpha), transparent);
+        }
+      }
+    }
+  }
+  .active\:scale-95 {
+    &:active {
+      --tw-scale-x: 95%;
+      --tw-scale-y: 95%;
+      --tw-scale-z: 95%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+  .sm\:col-span-1 {
+    @media (width >= 40rem) {
+      grid-column: span 1 / span 1;
+    }
+  }
+  .sm\:block {
+    @media (width >= 40rem) {
+      display: block;
+    }
+  }
+  .sm\:min-h-\[460px\] {
+    @media (width >= 40rem) {
+      min-height: 460px;
+    }
+  }
+  .sm\:grid-cols-3 {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
+    }
+  }
+  .sm\:px-6 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:text-4xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+  .sm\:text-5xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+  .sm\:text-lg {
+    @media (width >= 40rem) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:grid-cols-3 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:items-center {
+    @media (width >= 48rem) {
+      align-items: center;
+    }
+  }
+  .md\:py-40 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 40);
+    }
+  }
+  .lg\:col-span-4 {
+    @media (width >= 64rem) {
+      grid-column: span 4 / span 4;
+    }
+  }
+  .lg\:col-span-5 {
+    @media (width >= 64rem) {
+      grid-column: span 5 / span 5;
+    }
+  }
+  .lg\:col-span-7 {
+    @media (width >= 64rem) {
+      grid-column: span 7 / span 7;
+    }
+  }
+  .lg\:col-span-8 {
+    @media (width >= 64rem) {
+      grid-column: span 8 / span 8;
+    }
+  }
+  .lg\:grid-cols-3 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-12 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+  }
+  .lg\:px-8 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 8);
+    }
+  }
+  .lg\:text-6xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .xl\:block {
+    @media (width >= 80rem) {
+      display: block;
+    }
+  }
+}
+.perspective-1000 {
+  perspective: 1000px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #252630;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff3366;
+}
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.15);
+}
+.glow-red {
+  box-shadow: 0 0 20px rgba(255, 51, 102, 0.15);
+}
+.glow-purple {
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.15);
+}
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+.animate-scanline {
+  animation: scanline 6s linear infinite;
+}
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+  color: transparent;
+}
+.text-stroke:hover {
+  -webkit-text-stroke: 1px rgba(255, 51, 102, 0.4);
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
+      --tw-ease: initial;
+    }
+  }
+}
+</style></head>
+  <body>
+    <div id="root"><div class="bg-editor-bg text-white min-h-screen relative font-sans selection:bg-brand-red selection:text-white overflow-x-hidden"><div class="absolute inset-0 z-0 pointer-events-none opacity-[0.03] bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:40px_40px]"></div><div class="fixed top-4 left-4 bottom-4 right-4 z-30 pointer-events-none border border-white/5 hidden xl:block"><span class="absolute top-0 left-0 w-3 h-[1px] bg-white/20"></span><span class="absolute top-0 left-0 h-3 w-[1px] bg-white/20"></span><span class="absolute top-0 right-0 w-3 h-[1px] bg-white/20"></span><span class="absolute top-0 right-0 h-3 w-[1px] bg-white/20"></span><span class="absolute bottom-0 left-0 w-3 h-[1px] bg-white/20"></span><span class="absolute bottom-0 left-0 h-3 w-[1px] bg-white/20"></span><span class="absolute bottom-0 right-0 w-3 h-[1px] bg-white/20"></span><span class="absolute bottom-0 right-0 h-3 w-[1px] bg-white/20"></span></div><nav class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 border-b bg-[#050505]/40 backdrop-blur-sm py-5 border-white/5"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center"><a href="https://ais-dev-n6ynywkrc7skcur3ohq3cx-529322522046.asia-east1.run.app/#" class="flex items-center gap-3 group cursor-pointer"><div class="w-8 h-8 bg-brand-cyan rounded-sm rotate-45 flex items-center justify-center text-black font-bold tracking-tight shadow-[0_0_15px_rgba(6,182,212,0.4)] group-hover:scale-105 transition-transform"><div class="-rotate-45"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-film w-4.5 h-4.5 text-black" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M7 3v18"></path><path d="M3 7.5h4"></path><path d="M3 12h18"></path><path d="M3 16.5h4"></path><path d="M17 3v18"></path><path d="M17 7.5h4"></path><path d="M17 16.5h4"></path></svg></div></div><div class="text-left leading-none"><span class="text-xl font-extrabold tracking-tighter text-white uppercase italic block">AKASH_EDITS</span><span class="text-[9px] text-brand-cyan uppercase tracking-[0.2em] block font-bold">Cinematography &amp; Post</span></div></a><div class="hidden md:flex items-center gap-8"><a href="https://ais-dev-n6ynywkrc7skcur3ohq3cx-529322522046.asia-east1.run.app/#three-d-workspace" class="font-mono text-xs text-white/60 hover:text-brand-cyan transition-colors tracking-widest uppercase font-semibold">01. Workspace</a><a href="https://ais-dev-n6ynywkrc7skcur3ohq3cx-529322522046.asia-east1.run.app/#portfolio-section" class="font-mono text-xs text-white/60 hover:text-brand-cyan transition-colors tracking-widest uppercase font-semibold">02. Highlights</a><a href="https://ais-dev-n6ynywkrc7skcur3ohq3cx-529322522046.asia-east1.run.app/#about-section" class="font-mono text-xs text-white/60 hover:text-brand-cyan transition-colors tracking-widest uppercase font-semibold">03. Behind The Lens</a></div><div class="hidden md:flex items-center gap-3"><a href="https://yt.openinapp.co/nlbev" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-black hover:bg-white transition-all w-8 h-8 flex items-center justify-center rounded-full border border-white/20" title="YouTube Channel"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube w-4 h-4" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a><a href="https://www.instagram.com/akashpasthak?igsh=Z3d5d212NDJ2dW5s" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-black hover:bg-white transition-all w-8 h-8 flex items-center justify-center rounded-full border border-white/20" title="Instagram Reel Highlights"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-4 h-4" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a></div><div class="md:hidden"><button class="text-white/80 hover:text-white p-1" aria-label="Toggle navigation menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-6 h-6" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg></button></div></div></nav><header class="relative pt-32 pb-20 md:py-40 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center z-10"><div class="absolute top-20 right-10 w-[40vw] h-[40vw] bg-brand-red/10 rounded-full blur-[120px] pointer-events-none z-0"></div><div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10"><div class="lg:col-span-7 space-y-6 text-left"><div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-3 py-1 rounded-full font-mono text-[10px] text-brand-cyan tracking-widest uppercase font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-brand-cyan animate-ping"></span><span>EDIT_SUITE_ACTIVE // VER: 4.2.0</span></div><div class="space-y-4"><h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter uppercase italic text-white leading-none">Storytelling <br><span class="text-stroke text-white/90">Through The</span> <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan via-brand-purple to-brand-red">Perfect Cut.</span></h1><p class="text-white/60 text-base sm:text-lg max-w-xl leading-relaxed">21-year-old passionate visual storyteller creating high-energy filmmaking and cinematography pieces. Specialize in high-energy commercial spots, cinematic grading pipelines, and interactive social storytelling.</p></div><div class="grid grid-cols-2 sm:grid-cols-3 gap-4 py-4 border-y border-white/5 font-mono text-xs text-white/55"><div class="space-y-0.5"><span class="text-white/30 block text-[9px] uppercase tracking-wider">RESOLUTIONS</span><span class="text-white font-bold block">4K DCI / HDR UHD</span></div><div class="space-y-0.5 border-l border-white/5 pl-4"><span class="text-white/30 block text-[9px] uppercase tracking-wider">COLOR PIPELINE</span><span class="text-brand-cyan font-bold block">ACES Workflow</span></div><div class="space-y-0.5 border-l border-white/5 pl-4 col-span-2 sm:col-span-1"><span class="text-white/30 block text-[9px] uppercase tracking-wider">DELIVERY CODECS</span><span class="text-brand-red font-bold block">ProRes 4444XQ</span></div></div><div class="flex flex-wrap gap-4 items-center"><a href="https://ais-dev-n6ynywkrc7skcur3ohq3cx-529322522046.asia-east1.run.app/#portfolio-section" class="bg-brand-red hover:bg-brand-red/90 text-white font-bold text-xs uppercase px-6 py-3 rounded-lg tracking-widest transition-all duration-300 shadow-[0_0_20px_rgba(255,51,102,0.3)] hover:shadow-brand-red/40 cursor-pointer">Inspect Reel Highlights</a></div><div class="pt-2 flex items-center gap-3"><span class="text-[10px] font-mono text-white/30 uppercase tracking-widest">Connect Hub:</span><div class="flex gap-2"><a href="https://yt.openinapp.co/nlbev" target="_blank" rel="noopener noreferrer" class="bg-white/5 border border-white/10 hover:border-brand-red p-2 rounded text-white/50 hover:text-white transition-colors flex items-center gap-1 text-[11px] font-mono"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube w-3.5 h-3.5" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg><span>YouTube</span></a><a href="https://www.instagram.com/akashpasthak?igsh=Z3d5d212NDJ2dW5s" target="_blank" rel="noopener noreferrer" class="bg-white/5 border border-white/10 hover:border-brand-cyan p-2 rounded text-white/50 hover:text-white transition-colors flex items-center gap-1 text-[11px] font-mono"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-3.5 h-3.5" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg><span>Instagram</span></a></div></div></div><div class="lg:col-span-5 flex justify-center items-center relative"><div class="w-full flex items-center justify-center p-4 min-h-[380px] sm:min-h-[460px] perspective-1000"><div class="relative w-full max-w-[480px] aspect-[16/11] bg-editor-card/60 backdrop-blur-md rounded-2xl border border-white/10 glow-cyan p-5 preserve-3d cursor-pointer select-none overflow-hidden" id="three-d-workspace" style="transform: rotateX(0deg) rotateY(0deg); transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);"><div class="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-brand-cyan/10 rounded-full blur-3xl pointer-events-none"></div><div class="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-32 h-32 bg-brand-red/10 rounded-full blur-3xl pointer-events-none"></div><div class="absolute inset-4 rounded-xl border border-white/5 bg-editor-bg/80 pointer-events-none overflow-hidden preserve-3d" style="transform: translateZ(-40px);"><div class="absolute right-3 top-3 bottom-3 w-8 flex flex-col justify-between gap-0.5 p-1 bg-black/40 rounded border border-white/5"><div class="w-full h-1 rounded-sm transition-all duration-75 bg-white/10"></div><div class="w-full h-1 rounded-sm transition-all duration-75 bg-white/10"></div><div class="w-full h-1 rounded-sm transition-all duration-75 bg-white/10"></div><div class="w-full h-1 rounded-sm transition-all duration-75 bg-white/10"></div><div class="w-full h-1 rounded-sm transition-all duration-75 bg-white/10"></div><div class="w-full h-1 rounded-sm transition-all duration-75 bg-white/10"></div><div class="w-full h-1 rounded-sm transition-all duration-75 bg-white/10"></div><div class="w-full h-1 rounded-sm transition-all duration-75 bg-white/10"></div><div class="w-full h-1 rounded-sm transition-all duration-75 bg-white/10"></div><div class="w-full h-1 rounded-sm transition-all duration-75 bg-white/10"></div><div class="w-full h-1 rounded-sm transition-all duration-75 bg-white/10"></div><div class="w-full h-1 rounded-sm transition-all duration-75 bg-white/10"></div><div class="w-full h-1 rounded-sm transition-all duration-75 bg-white/10"></div><div class="w-full h-1 rounded-sm transition-all duration-75 bg-white/10"></div><div class="w-full h-1 rounded-sm transition-all duration-75 bg-white/10"></div></div><div class="absolute left-4 bottom-4 w-16 h-16 rounded-full border border-white/10 bg-black/50 flex items-center justify-center"><div class="absolute inset-0 border border-brand-cyan/20 rounded-full scale-75 border-dashed"></div><div class="w-1.5 h-1.5 rounded-full bg-brand-cyan shadow-[0_0_8px_#00f0ff]"></div><svg class="w-full h-full absolute inset-0 text-brand-cyan/40" viewBox="0 0 100 100"><path d="M50 10 L50 90 M10 50 L90 50" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2,2"></path><path d="M50 50 Q32.777478115757674 56.91568561095611 33.88236428138725 41.50777286524199" fill="none" stroke="#00f0ff" stroke-width="1.5" class="opacity-75"></path><path d="M50 50 Q50.01758095221151 22.777478115757678 74.88028209870475 58.39913452805947" fill="none" stroke="#ff3366" stroke-width="1" class="opacity-60"></path></svg></div></div><div class="absolute inset-6 border border-white/10 rounded-lg pointer-events-none flex flex-col justify-between p-2 font-mono text-[10px] text-white/50" style="transform: translateZ(-15px);"><div class="flex justify-between items-center"><div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-brand-red animate-pulse"></span><span class="text-white font-medium tracking-widest text-[9px]">REC</span></div><div class="bg-black/30 px-1.5 py-0.5 rounded border border-white/5 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu w-2.5 h-2.5 text-brand-cyan" aria-hidden="true"><path d="M12 20v2"></path><path d="M12 2v2"></path><path d="M17 20v2"></path><path d="M17 2v2"></path><path d="M2 12h2"></path><path d="M2 17h2"></path><path d="M2 7h2"></path><path d="M20 12h2"></path><path d="M20 17h2"></path><path d="M20 7h2"></path><path d="M7 20v2"></path><path d="M7 2v2"></path><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="8" y="8" width="8" height="8" rx="1"></rect></svg><span>CUDA ENGINE</span></div><span>STBY</span></div><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 flex items-center justify-center text-white/20"><div class="w-2 h-[1px] bg-white absolute"></div><div class="h-2 w-[1px] bg-white absolute"></div></div><div class="flex justify-between items-end"><div class="space-y-0.5"><p class="text-brand-cyan">ISO 400</p><p>5600K</p></div><div class="text-center"><span class="text-white text-xs tracking-wider block font-bold">00:04:56:19</span><span class="text-[8px] text-white/30 font-mono block">FPS: 24.00</span></div><div class="text-right space-y-0.5"><p class="text-brand-red">4K UHD</p><p>RAW 12-BIT</p></div></div></div><div class="absolute top-14 left-10 right-20 bottom-24 bg-editor-bg rounded border border-white/10 overflow-hidden flex flex-col justify-between preserve-3d" style="transform: translateZ(15px);"><div class="relative w-full h-full bg-slate-950 overflow-hidden flex items-center justify-center"><div class="absolute inset-0 bg-cover bg-center opacity-60 mix-blend-screen" style="background-image: url(&quot;https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&amp;auto=format&amp;fit=crop&amp;q=80&quot;);"></div><div class="absolute inset-0 bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%)] bg-[length:100%_4px] pointer-events-none"></div><div class="absolute inset-0 bg-gradient-to-r from-transparent via-brand-cyan/20 to-transparent -translate-x-full animate-scanline"></div><div class="absolute top-2 left-2 flex gap-1 items-center bg-black/70 px-1.5 py-0.5 rounded text-[8px] font-mono text-white/80 border border-white/10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor w-2 h-2 text-brand-cyan" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg><span>SOURCE MONITOR (V1)</span></div><div class="z-10 bg-black/60 backdrop-blur-md p-2 rounded-full border border-white/20 hover:scale-110 active:scale-95 transition-transform"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-3.5 h-3.5 text-brand-red fill-brand-red ml-0.5" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg></div><div class="absolute bottom-2 left-2 bg-black/60 px-1 py-0.5 rounded text-[7px] text-white/40 font-mono">LUT: ALEX_CINEMATIC_V3.cube</div></div></div><div class="absolute bottom-4 left-6 right-6 h-16 bg-black/80 backdrop-blur-md rounded-lg border border-white/10 p-1.5 flex flex-col justify-between font-mono text-[8px] preserve-3d" style="transform: translateZ(40px);"><div class="flex justify-between items-center text-white/30 border-b border-white/5 pb-1"><div class="flex items-center gap-1.5 text-brand-cyan"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-film w-2.5 h-2.5" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M7 3v18"></path><path d="M3 7.5h4"></path><path d="M3 12h18"></path><path d="M3 16.5h4"></path><path d="M17 3v18"></path><path d="M17 7.5h4"></path><path d="M17 16.5h4"></path></svg><span>TIMELINE.01</span></div><div class="flex gap-2"><span>V2 [VIDEO_B_ROLL]</span><span>A1 [AMBIENCE]</span></div></div><div class="flex-1 flex flex-col gap-0.5 mt-1 justify-center relative"><div class="h-2 w-full flex gap-1"><div class="w-[15%] h-full rounded bg-brand-purple/20 border border-brand-purple/50 text-[6px] text-brand-purple flex items-center justify-center px-0.5 overflow-hidden">FX</div><div class="w-[45%] h-full rounded bg-brand-cyan/20 border border-brand-cyan/40 text-[6px] text-brand-cyan flex items-center justify-center px-1 font-bold">A01_DRONE.mp4</div><div class="w-[20%] h-full rounded bg-white/5 border border-white/10"></div><div class="w-[15%] h-full rounded bg-brand-red/20 border border-brand-red/40"></div></div><div class="h-2 w-full flex gap-1"><div class="w-[30%] h-full rounded bg-brand-cyan/20 border border-brand-cyan/40"></div><div class="w-[25%] h-full rounded bg-brand-purple/20 border border-brand-purple/40"></div><div class="w-[35%] h-full rounded bg-brand-cyan/20 border border-brand-cyan/40"></div></div><div class="h-2 w-full flex gap-1"><div class="w-[10%] h-full rounded bg-emerald-500/15 border border-emerald-500/30"></div><div class="w-[60%] h-full rounded bg-emerald-500/20 border border-emerald-500/40 flex items-center px-1 text-[5px] text-emerald-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-volume2 lucide-volume-2 w-2 h-2 mr-1 shrink-0" aria-hidden="true"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"></path><path d="M16 9a5 5 0 0 1 0 6"></path><path d="M19.364 18.364a9 9 0 0 0 0-12.728"></path></svg> SYNTH_DRONE_STEREO.wav</div><div class="w-[25%] h-full rounded bg-emerald-500/15 border border-emerald-500/30"></div></div><div class="absolute top-[-4px] bottom-[-2px] w-[1px] bg-brand-red shadow-[0_0_8px_#ff3366] z-20 pointer-events-none" style="left: 42%; transition: left 0.3s;"><div class="absolute top-[-3px] left-[-2px] w-1.5 h-1.5 bg-brand-red rotate-45"></div></div></div></div><div class="absolute top-6 right-6 bg-brand-cyan/15 text-brand-cyan text-[8px] font-mono font-semibold px-2 py-1 rounded border border-brand-cyan/30 flex items-center gap-1.5 shadow-[0_4px_12px_rgba(0,0,0,0.5)] pointer-events-none" style="transform: translateZ(60px);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-2.5 h-2.5 animate-spin duration-1000" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg><span>3D PARALLAX DEPTH</span></div><div class="absolute bottom-20 left-4 bg-brand-red/15 text-brand-red text-[8px] font-mono font-semibold px-1.5 py-0.5 rounded border border-brand-red/30 flex items-center gap-1 pointer-events-none" style="transform: translateZ(55px);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers w-2 h-2" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg><span>VFX COMPOSED</span></div></div><div class="absolute bottom-0 text-[10px] font-mono text-white/30 tracking-widest pointer-events-none uppercase">Move cursor to edit space • Interactive 3D timeline</div></div></div></div></header><main class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24 pb-20"><section class="space-y-8"><div class="text-left space-y-2"><div class="flex items-center gap-2 font-mono text-xs text-brand-red uppercase tracking-widest font-semibold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 fill-brand-red text-brand-red" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg><span>01 // Selected Post-Cuts</span></div><h2 class="text-3xl font-extrabold tracking-tighter uppercase italic text-white sm:text-4xl">Project Highlights</h2><p class="text-white/50 text-sm max-w-2xl leading-relaxed">Explore my best editorial reels, graded sequences, commercial projects, and short films. Tap any highlight card for high-resolution specs, tools applied, and real-time theater playbacks.</p></div><div class="w-full space-y-10" id="portfolio-section"><div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-white/5 pb-6"><div class="flex items-center gap-2 font-mono text-xs text-brand-cyan uppercase tracking-widest"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sliders-horizontal w-4 h-4" aria-hidden="true"><path d="M10 5H3"></path><path d="M12 19H3"></path><path d="M14 3v4"></path><path d="M16 17v4"></path><path d="M21 12h-9"></path><path d="M21 19h-5"></path><path d="M21 5h-7"></path><path d="M8 10v4"></path><path d="M8 12H3"></path></svg><span>Filter Work Scope</span></div><div class="flex flex-wrap gap-2"><button class="px-4 py-1.5 rounded-full text-sm font-medium tracking-wide transition-all duration-300 bg-white/5 hover:bg-white/10 text-white/70 hover:text-white border border-white/10">All Cuts</button><button class="px-4 py-1.5 rounded-full text-sm font-medium tracking-wide transition-all duration-300 bg-white/5 hover:bg-white/10 text-white/70 hover:text-white border border-white/10">Cinematics</button><button class="px-4 py-1.5 rounded-full text-sm font-medium tracking-wide transition-all duration-300 bg-brand-red text-white shadow-[0_0_15px_rgba(255,51,102,0.3)] border-transparent">Short Film</button></div></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><div class="group relative bg-editor-card/40 rounded-xl border border-white/10 overflow-hidden cursor-pointer shadow-lg preserve-3d" style="transform: rotateX(0deg) rotateY(0deg) scale(1); transition: transform 0.5s; transform-style: preserve-3d;"><div class="relative aspect-video overflow-hidden border-b border-white/5 transition-transform duration-500" style="transform: translateZ(0px);"><img alt="A Small Decision | Short film by Akash Pathak" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-90 group-hover:brightness-110" referrerpolicy="no-referrer" src="./maxresdefault.jpg"><div class="absolute inset-0 bg-gradient-to-t from-editor-bg via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div><span class="absolute top-3 right-3 bg-black/80 backdrop-blur-md px-2 py-0.5 rounded font-mono text-[10px] text-white/90 border border-white/10 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-3 h-3 text-brand-cyan" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>5:22</span><div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"><div class="w-12 h-12 rounded-full bg-brand-red/90 flex items-center justify-center text-white shadow-[0_0_20px_#ff3366] transition-transform duration-300 scale-90 group-hover:scale-100"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-6 h-6 fill-white ml-0.5" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg></div></div><div class="absolute bottom-3 left-3 flex gap-2 font-mono text-[9px]"><span class="bg-editor-bg/85 px-1.5 py-0.5 rounded border border-white/5 text-brand-cyan uppercase tracking-wider">4K</span><span class="bg-editor-bg/85 px-1.5 py-0.5 rounded border border-white/5 text-brand-red tracking-wider">24.00 fps</span></div></div><div class="p-5 space-y-3 transition-transform duration-500" style="transform: translateZ(0px);"><div><span class="text-[11px] font-mono font-semibold text-brand-cyan uppercase tracking-widest block mb-1">Narrative Short Film</span><h3 class="text-lg font-bold text-white group-hover:text-brand-red transition-colors line-clamp-1">A Small Decision | Short film by Akash Pathak</h3></div><p class="text-sm text-white/60 line-clamp-2 leading-relaxed">A compelling and emotionally resonant short film exploring pivotal moments and life choices. Directed and crafted with a meticulous visual style, custom pacing, and highly atmospheric sound design that enhances the storytelling experience.</p></div></div><div class="group relative bg-editor-card/40 rounded-xl border border-white/10 overflow-hidden cursor-pointer shadow-lg preserve-3d" style="transform: rotateX(0deg) rotateY(0deg) scale(1); transition: transform 0.5s; transform-style: preserve-3d;"><div class="relative aspect-video overflow-hidden border-b border-white/5 transition-transform duration-500" style="transform: translateZ(0px);"><img alt="The Last Night | Short Film |" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-90 group-hover:brightness-110" referrerpolicy="no-referrer" src="./hqdefault.jpg"><div class="absolute inset-0 bg-gradient-to-t from-editor-bg via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div><span class="absolute top-3 right-3 bg-black/80 backdrop-blur-md px-2 py-0.5 rounded font-mono text-[10px] text-white/90 border border-white/10 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-3 h-3 text-brand-cyan" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>4:15</span><div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"><div class="w-12 h-12 rounded-full bg-brand-red/90 flex items-center justify-center text-white shadow-[0_0_20px_#ff3366] transition-transform duration-300 scale-90 group-hover:scale-100"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-6 h-6 fill-white ml-0.5" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg></div></div><div class="absolute bottom-3 left-3 flex gap-2 font-mono text-[9px]"><span class="bg-editor-bg/85 px-1.5 py-0.5 rounded border border-white/5 text-brand-cyan uppercase tracking-wider">4K</span><span class="bg-editor-bg/85 px-1.5 py-0.5 rounded border border-white/5 text-brand-red tracking-wider">23.976 fps</span></div></div><div class="p-5 space-y-3 transition-transform duration-500" style="transform: translateZ(0px);"><div><span class="text-[11px] font-mono font-semibold text-brand-cyan uppercase tracking-widest block mb-1">Narrative Drama / Short Film</span><h3 class="text-lg font-bold text-white group-hover:text-brand-red transition-colors line-clamp-1">The Last Night | Short Film |</h3></div><p class="text-sm text-white/60 line-clamp-2 leading-relaxed">A tense, beautifully styled narrative piece capturing intimate late-night conversations and high-contrast cinematographic moods. Balanced with realistic artificial light leaks, subtle audio layering, and smooth dialogue pacing.</p></div></div><div class="group relative bg-editor-card/40 rounded-xl border border-white/10 overflow-hidden cursor-pointer shadow-lg preserve-3d" style="transform: rotateX(0deg) rotateY(0deg) scale(1); transition: transform 0.5s; transform-style: preserve-3d;"><div class="relative aspect-video overflow-hidden border-b border-white/5 transition-transform duration-500" style="transform: translateZ(0px);"><img alt="Give me 59 seconds.. I&#39;ll intoduce myself" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-90 group-hover:brightness-110" referrerpolicy="no-referrer" src="./maxresdefault(1).jpg"><div class="absolute inset-0 bg-gradient-to-t from-editor-bg via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-300"></div><span class="absolute top-3 right-3 bg-black/80 backdrop-blur-md px-2 py-0.5 rounded font-mono text-[10px] text-white/90 border border-white/10 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-3 h-3 text-brand-cyan" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>0:59</span><div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"><div class="w-12 h-12 rounded-full bg-brand-red/90 flex items-center justify-center text-white shadow-[0_0_20px_#ff3366] transition-transform duration-300 scale-90 group-hover:scale-100"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play w-6 h-6 fill-white ml-0.5" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg></div></div><div class="absolute bottom-3 left-3 flex gap-2 font-mono text-[9px]"><span class="bg-editor-bg/85 px-1.5 py-0.5 rounded border border-white/5 text-brand-cyan uppercase tracking-wider">4K</span><span class="bg-editor-bg/85 px-1.5 py-0.5 rounded border border-white/5 text-brand-red tracking-wider">60.00 fps</span></div></div><div class="p-5 space-y-3 transition-transform duration-500" style="transform: translateZ(0px);"><div><span class="text-[11px] font-mono font-semibold text-brand-cyan uppercase tracking-widest block mb-1">Introductory / Cinematic Short</span><h3 class="text-lg font-bold text-white group-hover:text-brand-red transition-colors line-clamp-1">Give me 59 seconds.. I'll intoduce myself</h3></div><p class="text-sm text-white/60 line-clamp-2 leading-relaxed">A highly dynamic, fast-paced cinematic introduction of the creator, designed to hook the audience instantly. Combines split-screen arrangements, kinetic title transitions, and professional rhythm-driven sound effects.</p></div></div></div></div></section><section class="pt-8 border-t border-white/5"><div class="w-full space-y-16" id="about-section"><div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center"><div class="lg:col-span-5 flex justify-center"><div class="relative w-full max-w-[340px] aspect-[4/5] rounded-2xl border border-white/10 p-2 overflow-hidden bg-editor-card/30 backdrop-blur-md group shadow-xl"><div class="absolute top-4 left-4 w-3 h-3 border-t-2 border-l-2 border-brand-cyan opacity-40 group-hover:opacity-100 transition-opacity"></div><div class="absolute top-4 right-4 w-3 h-3 border-t-2 border-r-2 border-brand-cyan opacity-40 group-hover:opacity-100 transition-opacity"></div><div class="absolute bottom-4 left-4 w-3 h-3 border-b-2 border-l-2 border-brand-cyan opacity-40 group-hover:opacity-100 transition-opacity"></div><div class="absolute bottom-4 right-4 w-3 h-3 border-b-2 border-r-2 border-brand-cyan opacity-40 group-hover:opacity-100 transition-opacity"></div><div class="w-full h-full rounded-xl overflow-hidden relative"><img alt="Akash Pathak" class="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" referrerpolicy="no-referrer" src="./akash_pathak_portrait_1782974305808.jpg"><div class="absolute inset-0 bg-gradient-to-t from-brand-red/20 via-transparent to-transparent opacity-60 group-hover:opacity-25 transition-opacity pointer-events-none"></div><div class="absolute top-4 right-4 bg-black/80 backdrop-blur-md border border-brand-cyan/40 px-2 py-1 rounded text-[9px] font-mono font-bold tracking-widest text-brand-cyan uppercase animate-pulse">● AVAILABLE FOR EDIT BOOKINGS</div></div></div></div><div class="lg:col-span-7 space-y-6 text-left"><div class="space-y-2"><span class="text-xs font-mono tracking-widest text-brand-red uppercase font-semibold block">Behind the Viewfinder</span><h2 class="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">About Akash Pathak</h2></div><p class="text-white/80 leading-relaxed text-base sm:text-lg">Hi, I'm Akash Pathak, a 21-year-old passionate video editor and cinematographer. I am an enthusiastic creator who loves making content, doing filmmaking, and bringing engaging stories to life. With a sharp eye for pacing, framing, and soundscapes, I craft compelling visual journeys from raw footage. Always exploring new horizons behind the lens and in the editing suite.</p><div class="grid grid-cols-2 gap-4 pt-4 border-t border-white/5"><div class="bg-editor-card/25 border border-white/5 rounded-xl p-4 text-center space-y-1"><div class="flex justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase w-5 h-5 text-brand-cyan" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg></div><div class="text-2xl font-black text-white">2+</div><div class="text-[10px] font-mono text-white/40 uppercase tracking-wider">Years Experience</div></div><div class="bg-editor-card/25 border border-white/5 rounded-xl p-4 text-center space-y-1"><div class="flex justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award w-5 h-5 text-brand-red" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg></div><div class="text-2xl font-black text-white">40+</div><div class="text-[10px] font-mono text-white/40 uppercase tracking-wider">Completed Cuts</div></div></div></div></div><div class="space-y-6 pt-6 border-t border-white/5"><div class="text-center space-y-1"><span class="text-xs font-mono tracking-widest text-brand-purple uppercase font-semibold">Specialized Skillset</span><h3 class="text-2xl font-bold text-white tracking-tight">Post-Production Mastery</h3></div><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="bg-editor-card/20 hover:bg-editor-card/30 border border-white/5 hover:border-white/10 rounded-xl p-5 space-y-4 transition-all duration-300 text-left relative overflow-hidden group"><div class="absolute top-0 right-0 w-24 h-24 bg-brand-cyan/5 rounded-full blur-2xl group-hover:bg-brand-cyan/10 transition-colors pointer-events-none"></div><div class="space-y-1"><h4 class="text-base font-bold text-white tracking-tight group-hover:text-brand-cyan transition-colors">Color Science</h4><p class="text-xs text-white/60 leading-relaxed">Expertise in color matching multi-cam shoots, creating custom look-up tables (LUTs), HDR grading, and tone mapping for diverse displays.</p></div><div class="flex flex-wrap gap-1.5 pt-1"><span class="bg-black/40 border border-white/5 px-2 py-0.5 rounded text-[10px] font-mono text-brand-cyan/80 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-2.5 h-2.5 text-brand-cyan" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>ACES Workflow</span></span><span class="bg-black/40 border border-white/5 px-2 py-0.5 rounded text-[10px] font-mono text-brand-cyan/80 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-2.5 h-2.5 text-brand-cyan" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>HDR &amp; Dolby Vision</span></span><span class="bg-black/40 border border-white/5 px-2 py-0.5 rounded text-[10px] font-mono text-brand-cyan/80 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-2.5 h-2.5 text-brand-cyan" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Shot Matching</span></span><span class="bg-black/40 border border-white/5 px-2 py-0.5 rounded text-[10px] font-mono text-brand-cyan/80 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-2.5 h-2.5 text-brand-cyan" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Skin Tone Correction</span></span><span class="bg-black/40 border border-white/5 px-2 py-0.5 rounded text-[10px] font-mono text-brand-cyan/80 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-2.5 h-2.5 text-brand-cyan" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Film Emulation</span></span></div></div><div class="bg-editor-card/20 hover:bg-editor-card/30 border border-white/5 hover:border-white/10 rounded-xl p-5 space-y-4 transition-all duration-300 text-left relative overflow-hidden group"><div class="absolute top-0 right-0 w-24 h-24 bg-brand-cyan/5 rounded-full blur-2xl group-hover:bg-brand-cyan/10 transition-colors pointer-events-none"></div><div class="space-y-1"><h4 class="text-base font-bold text-white tracking-tight group-hover:text-brand-cyan transition-colors">Narrative Pacing &amp; Storytelling</h4><p class="text-xs text-white/60 leading-relaxed">Crafting compelling story arcs out of hours of footage. Understanding when to let a scene breathe vs. maintaining relentless momentum.</p></div><div class="flex flex-wrap gap-1.5 pt-1"><span class="bg-black/40 border border-white/5 px-2 py-0.5 rounded text-[10px] font-mono text-brand-cyan/80 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-2.5 h-2.5 text-brand-cyan" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Subtext Cutting</span></span><span class="bg-black/40 border border-white/5 px-2 py-0.5 rounded text-[10px] font-mono text-brand-cyan/80 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-2.5 h-2.5 text-brand-cyan" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>J &amp; L Cuts</span></span><span class="bg-black/40 border border-white/5 px-2 py-0.5 rounded text-[10px] font-mono text-brand-cyan/80 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-2.5 h-2.5 text-brand-cyan" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Montage Work</span></span><span class="bg-black/40 border border-white/5 px-2 py-0.5 rounded text-[10px] font-mono text-brand-cyan/80 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-2.5 h-2.5 text-brand-cyan" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Dialogue Cleanup</span></span><span class="bg-black/40 border border-white/5 px-2 py-0.5 rounded text-[10px] font-mono text-brand-cyan/80 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-2.5 h-2.5 text-brand-cyan" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Rhythm &amp; Tempo Analysis</span></span></div></div><div class="bg-editor-card/20 hover:bg-editor-card/30 border border-white/5 hover:border-white/10 rounded-xl p-5 space-y-4 transition-all duration-300 text-left relative overflow-hidden group"><div class="absolute top-0 right-0 w-24 h-24 bg-brand-cyan/5 rounded-full blur-2xl group-hover:bg-brand-cyan/10 transition-colors pointer-events-none"></div><div class="space-y-1"><h4 class="text-base font-bold text-white tracking-tight group-hover:text-brand-cyan transition-colors">Sound Design &amp; Spatial Audio</h4><p class="text-xs text-white/60 leading-relaxed">Layering sound effects, ambiance, foley, and score mixing to construct fully immersive spatial audio fields that enhance visual triggers.</p></div><div class="flex flex-wrap gap-1.5 pt-1"><span class="bg-black/40 border border-white/5 px-2 py-0.5 rounded text-[10px] font-mono text-brand-cyan/80 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-2.5 h-2.5 text-brand-cyan" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Audio Restoration</span></span><span class="bg-black/40 border border-white/5 px-2 py-0.5 rounded text-[10px] font-mono text-brand-cyan/80 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-2.5 h-2.5 text-brand-cyan" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Foley Layering</span></span><span class="bg-black/40 border border-white/5 px-2 py-0.5 rounded text-[10px] font-mono text-brand-cyan/80 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-2.5 h-2.5 text-brand-cyan" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Sub-bass Accentuation</span></span><span class="bg-black/40 border border-white/5 px-2 py-0.5 rounded text-[10px] font-mono text-brand-cyan/80 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-2.5 h-2.5 text-brand-cyan" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Tempo Syncing</span></span><span class="bg-black/40 border border-white/5 px-2 py-0.5 rounded text-[10px] font-mono text-brand-cyan/80 flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-2.5 h-2.5 text-brand-cyan" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Gain Staging</span></span></div></div></div></div><div class="bg-editor-card/20 border border-white/5 rounded-xl p-6 space-y-6 text-left"><div class="flex justify-between items-center border-b border-white/5 pb-3"><div class="space-y-0.5"><span class="text-[10px] font-mono text-brand-red tracking-widest uppercase block font-semibold">Post-Production Pipeline</span><h4 class="text-base font-bold text-white tracking-tight">Software Suite Mastery</h4></div><span class="font-mono text-[9px] text-white/30 hidden sm:block">SYSTEM READY // STABLE WORKSTATION</span></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><div class="space-y-2"><div class="flex justify-between items-center"><div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video w-5 h-5 text-brand-cyan" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path><rect x="2" y="6" width="14" height="12" rx="2"></rect></svg><span class="text-xs font-bold text-white/90">Adobe Premiere Pro</span></div><span class="font-mono text-[10px] text-brand-cyan font-bold">90%</span></div><div class="w-full bg-black/40 h-2 rounded-full overflow-hidden border border-white/5 p-0.5"><div class="h-full bg-gradient-to-r from-brand-cyan to-brand-purple rounded-full transition-all duration-1000 ease-out" style="width: 90%;"></div></div><div class="flex justify-between items-center text-[9px] font-mono text-white/30 capitalize"><span>Domain: editing</span><span>Level: Expert</span></div></div><div class="space-y-2"><div class="flex justify-between items-center"><div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5 text-brand-cyan" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg><span class="text-xs font-bold text-white/90">Adobe After Effects</span></div><span class="font-mono text-[10px] text-brand-cyan font-bold">45%</span></div><div class="w-full bg-black/40 h-2 rounded-full overflow-hidden border border-white/5 p-0.5"><div class="h-full bg-gradient-to-r from-brand-cyan to-brand-purple rounded-full transition-all duration-1000 ease-out" style="width: 45%;"></div></div><div class="flex justify-between items-center text-[9px] font-mono text-white/30 capitalize"><span>Domain: vfx</span><span>Level: Basic</span></div></div><div class="space-y-2"><div class="flex justify-between items-center"><div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-paintbrush w-5 h-5 text-brand-cyan" aria-hidden="true"><path d="m14.622 17.897-10.68-2.913"></path><path d="M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.41 2.41 0 0 1 0 3.408l-.944.944a.5.5 0 0 1-.707 0L8.354 7.348a.5.5 0 0 1 0-.707l.944-.944a2.41 2.41 0 0 1 3.408 0l.944.944a.5.5 0 0 0 .707 0z"></path><path d="M9 8c-1.804 2.71-3.97 3.46-6.583 3.948a.507.507 0 0 0-.302.819l7.32 8.883a1 1 0 0 0 1.185.204C12.735 20.405 16 16.792 16 15"></path></svg><span class="text-xs font-bold text-white/90">DaVinci Resolve</span></div><span class="font-mono text-[10px] text-brand-cyan font-bold">40%</span></div><div class="w-full bg-black/40 h-2 rounded-full overflow-hidden border border-white/5 p-0.5"><div class="h-full bg-gradient-to-r from-brand-cyan to-brand-purple rounded-full transition-all duration-1000 ease-out" style="width: 40%;"></div></div><div class="flex justify-between items-center text-[9px] font-mono text-white/30 capitalize"><span>Domain: color</span><span>Level: Basic</span></div></div><div class="space-y-2"><div class="flex justify-between items-center"><div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette w-5 h-5 text-brand-cyan" aria-hidden="true"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle></svg><span class="text-xs font-bold text-white/90">Canva</span></div><span class="font-mono text-[10px] text-brand-cyan font-bold">80%</span></div><div class="w-full bg-black/40 h-2 rounded-full overflow-hidden border border-white/5 p-0.5"><div class="h-full bg-gradient-to-r from-brand-cyan to-brand-purple rounded-full transition-all duration-1000 ease-out" style="width: 80%;"></div></div><div class="flex justify-between items-center text-[9px] font-mono text-white/30 capitalize"><span>Domain: editing</span><span>Level: Advanced</span></div></div></div></div></div></section></main><footer class="relative z-10 bg-[#121214]/80 backdrop-blur-md border-t border-white/10 py-12 text-white/50 font-mono text-xs"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8"><div class="space-y-3 text-left"><div class="flex items-center gap-2"><div class="w-6 h-6 rounded bg-brand-cyan flex items-center justify-center text-black text-xs font-bold font-mono">A</div><span class="font-bold text-white text-sm tracking-widest">AKASH_EDITS</span></div><p class="text-[10px] text-white/40 leading-relaxed">Cinematography &amp; Post-Production portfolio of Akash Pathak. Inspired storytelling and high-energy editing.</p></div><div class="space-y-2 text-left"><span class="text-[9px] text-brand-cyan tracking-widest uppercase block font-bold">DIRECTORY ARCHIVES</span><div class="flex flex-col gap-1.5 text-[10px]"><a href="https://ais-dev-n6ynywkrc7skcur3ohq3cx-529322522046.asia-east1.run.app/#three-d-workspace" class="hover:text-white transition-colors">TIMELINE WORKSPACE</a><a href="https://ais-dev-n6ynywkrc7skcur3ohq3cx-529322522046.asia-east1.run.app/#portfolio-section" class="hover:text-white transition-colors">SELECTED CUTS</a><a href="https://ais-dev-n6ynywkrc7skcur3ohq3cx-529322522046.asia-east1.run.app/#about-section" class="hover:text-white transition-colors">COMPETENCY MAP</a></div></div><div class="space-y-2 text-left"><span class="text-[9px] text-brand-red tracking-widest uppercase block font-bold">SOCIAL COORDS</span><div class="flex flex-col gap-1.5 text-[10px]"><a href="https://yt.openinapp.co/nlbev" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube w-3.5 h-3.5 text-brand-red" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg><span>YOUTUBE CHANNEL</span></a><a href="https://www.instagram.com/akashpasthak?igsh=Z3d5d212NDJ2dW5s" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-3.5 h-3.5 text-brand-cyan" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg><span>INSTAGRAM CLIPS</span></a></div></div></div><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-white/5 mt-8 pt-6 flex flex-col sm:flex-row justify-between gap-4 text-[10px] text-white/30 text-left"><p>© 2026 Akash Pathak. All Rights Reserved. Rec 4K ProRes Anamorphic.</p><p class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-brand-cyan rounded-full animate-pulse"></span><span>Calibrated with Outfit &amp; JetBrains Mono typography</span></p></div></footer></div></div>
+    <script type="module" src="./main.tsx"></script>
+  
+
+
+</body></html>
